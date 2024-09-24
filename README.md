@@ -17,6 +17,7 @@ A powerful video transcoder that leverages AWS services to download videos from 
 - [Technologies](#technologies)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
+- [Installation Instructions](#installation-instructions)
 - [Usage](#usage)
 - [Environment Variables](#environment-variables)
 - [License](#license)
@@ -53,7 +54,14 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/yourusername/video-transcoder.git
-   cd video-transcode
+   cd video-transcoder
+
+## Install Dependencies
 
 
-     
+
+If you're not using Docker, install the required Node.js packages:
+
+```bash
+npm install
+
