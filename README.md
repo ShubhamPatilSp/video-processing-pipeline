@@ -2,6 +2,15 @@
 
 A powerful video transcoder that leverages AWS services to download videos from S3, transcode them into multiple resolutions, and upload the processed videos back to S3. This project uses Node.js, FFmpeg, and AWS SDK for seamless video processing.
 
+![AWS Architecture](https://github.com/user-attachments/assets/3dccd270-6ad4-479f-b86b-cd612d105983)  
+*Diagram of AWS architecture used in the project*
+
+![Docker Setup](https://github.com/user-attachments/assets/f9c01c27-b8dd-4734-926c-4b657c8f29a0)  
+*Docker setup for containerization and deployment*
+
+![Terminal Output](https://github.com/user-attachments/assets/ec08538b-057b-450c-800c-447c7e633900)  
+*Terminal output during video transcoding process*
+
 ## Table of Contents
 
 - [Features](#features)
@@ -43,5 +52,8 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/ShubhamPatilSp/video-transcoder.git
-   cd video-transcoder
+   git clone https://github.com/yourusername/video-transcoder.git
+   cd video-transcode
+
+
+     
