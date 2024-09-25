@@ -20,32 +20,33 @@ A powerful video transcoder that leverages AWS services to download videos from 
 - [Installation Instructions](#installation-instructions)
 - [Usage](#usage)
 - [Environment Variables](#environment-variables)
+- [Roadmap](#roadmap)
 - [License](#license)
-- [Contributing](#contributing)
 - [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
 ## Features
 
 - Download videos from an AWS S3 bucket.
 - Transcode videos into multiple resolutions (360p, 480p, 720p).
 - Upload processed videos back to S3.
-- Use of FFmpeg for high-quality video processing.
+- Uses FFmpeg for high-quality video processing.
 
 ## Technologies
 
 This project is built with the following technologies:
 
 - **Node.js**: JavaScript runtime for building server-side applications.
-- **FFmpeg**: A multimedia framework for processing video and audio.
-- **AWS SDK**: A collection of tools for interacting with AWS services, particularly S3.
-- **Docker**: Containerization for easy deployment and consistency across environments.
+- **FFmpeg**: A multimedia framework for video and audio processing.
+- **AWS SDK**: Tools for interacting with AWS services, particularly S3.
+- **Docker**: Containerization for consistent deployment across environments.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 - **Node.js** (version 18 or later) installed on your machine.
-- **Docker** installed if you plan to run the project inside a container.
+- **Docker** installed, if you plan to run the project inside a container.
 - An **AWS account** with S3 access.
 
 ## Setup Instructions
@@ -56,12 +57,57 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/yourusername/video-transcoder.git
    cd video-transcoder
 
-## Install Dependencies
-
-
-
-If you're not using Docker, install the required Node.js packages:
-
+```
+## Docker Setup (Optional):
 ```bash
-npm install
+docker build -t video-transcoder .
+docker run -it video-transcoder
 
+```
+## Environment Variables
+```bash
+AWS_ACCESS_KEY_ID=your-access-key
+AWS_SECRET_ACCESS_KEY=your-secret-key
+AWS_S3_BUCKET_NAME=your-bucket-name
+AWS_REGION=your-region
+```
+- This will automatically:
+- Download videos from your specified S3 bucket.
+- ranscode the videos into different resolutions using FFmpeg.
+- Upload the processed videos back to the S3 bucket.
+  
+## Usage
+```bah
+npm run start
+
+```
+## Docker Usage
+```bash
+docker run -it video-transcoder
+
+```
+## Roadmap
+Here are some upcoming features and improvements:
+
+ - Implement basic video transcoding.
+ - Support multiple resolutions (360p, 480p, 720p).
+ - Upload processed videos to S3.
+ - Add support for more formats (e.g., 1080p).
+ - Improve error handling and logging.
+ - Add cloud deployment options (e.g., AWS Lambda).
+ - Integrate monitoring tools for performance tracking.
+See the open issues for a full list of proposed features (and known issues).
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact
+Your Name - Shubham Patil - xshuubhampatil@gmail.com
+
+Project Link:[ https://github.com/ShubhamPatilSp/video-transcoder](https://github.com/ShubhamPatilSp/video-processing-pipeline)
+
+## Acknowledgments
+- FFmpeg Documentation
+- AWS SDK Documentation
+- Docker Documentation
+- Node.js
